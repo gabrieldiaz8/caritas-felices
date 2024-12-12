@@ -5,7 +5,7 @@ Caritas Felices
 ## Instalación (primera vez)
 
 1. Clona este repositorio:
-    git clone https://git.frvm.utn.edu.ar/joeldellamaggiore/caritas-felices.git
+    git clone https:https://github.com/gabrieldiaz8/caritas-felices.git
 2. Crea y activa un entorno virtual:
     python3 -m venv venv
 3. Ejecuta el entorno virtual:
