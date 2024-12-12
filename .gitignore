@@ -1,0 +1,7 @@
+source
+venv
+portal/migrations
+db.sqlite3
+**__pycache__
+media
+caritas_felices/settings.py

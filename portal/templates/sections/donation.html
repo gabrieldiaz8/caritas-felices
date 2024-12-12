@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="w-100">
+  <div class="container-fluid bg-breadcrumb">
+    <div class="container text-center py-5" style="max-width: 900px;">
+        <h1 class="text-white display-3 mb-4">Quiero donar</h1>
+    </div>
+  </div>
+
+  <div class="container-fluid p-4 p-md-5 h-100 donation__wrapper gap-4">
+    <div
+      class="d-flex px-4 py-5 p-md-5 flex-column align-items-center bg-secondary rounded donation__column-left text-center gap-md-5 gap-2 justify-content-center"
+    >
+      <div>
+        <h1 class="display-5">¿Qué hacemos con las donaciones?</h1>
+        <p class="fs-4">
+          En Caritas Felices, las donaciones de comida y ropa nos permiten
+          ayudar a los niños de Villa María, brindándoles lo esencial para
+          crecer sanos y felices.
+        </p>
+      </div>
+
+      <div>
+        <h1 class="display-5">¿Cómo puedo donar?</h1>
+        <p class="fs-4">
+          Podés acercar tus donaciones de alimentos, ropa, juguetes o realizar
+          un aporte económico directamente en nuestra sede de Villa María. Si
+          preferís coordinar previamente, completá el formulario y Marisa se
+          pondrá en contacto con vos para organizar lo que desees donar. ¡Tu
+          ayuda hace la diferencia!
+        </p>
+      </div>
+
+      <div>
+        <h1 class="display-5">¿Qué tipo de donaciones aceptamos?</h1>
+        <p class="fs-4">
+          Recibimos alimentos no perecederos, ropa en buen estado, calzado,
+          útiles escolares y juguetes para los niños. Todo lo que traiga una
+          sonrisa es bienvenido.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="d-flex px-4 py-5 p-md-5 flex-column align-items-center bg-secondary rounded donation__column-right text-center gap-md-4 gap-2"
+    >
+      <header>
+        <h1 class="display-5">Dona ahora</h1>
+        <p class="fs-4 mb-md-0">
+          Tu ayuda llega a los niños que más lo necesitan. ¡Gracias por ser
+          parte de este cambio!
+        </p>
+      </header>
+      <form class="d-flex flex-column gap-2 w-100 h-100" id="donation-form" action="https://wa.me/5493534114971" method="get" target="_blank">
+        <div class="form-floating w-100">
+          <input
+            type="text"
+            class="form-control"
+            name="name"
+            id="name"
+            placeholder=""
+            required
+          />
+          <label for="name">Nombre</label>
+        </div>
+
+        <div class="form-floating h-100 w-100">
+          <textarea
+            class="form-control h-100"
+            style="min-height: 200px"
+            name="message"
+            placeholder="Leave a comment here"
+            id="message"
+            required
+          ></textarea>
+          <label for="message">Mensaje</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg w-100 py-3">
+          Donar
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.getElementById("donation-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    const name = document.getElementById("name").value;
+    const message = document.getElementById("message").value;
+    
+    const whatsappMessage = `Hola soy ${name}, entre a la pagina de Caritas Felices y quería decirte: ${message}`;
+    
+    const whatsappURL = `https://wa.me/5493534114971?text=${encodeURIComponent(whatsappMessage)}`;
+    
+    window.open(whatsappURL, "_blank");
+  });
+</script>
+
+{% endblock %}

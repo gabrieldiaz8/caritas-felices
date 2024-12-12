@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+{% load static %} 
+ {% block content %}
+    <body>
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="text-white display-3 mb-4">Sobre Nosotros</h1>
+                <p class="fs-5 text-white mb-4">El acto más simple de amor puede cambiar una vida para siempre</p>  
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- About Start -->
+        <div class="container-fluid about  py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-xl-5">
+                        <div class="h-100">
+                            <img src=" {% static 'img/about-1.jpg' %}" class="img-fluid w-100 h-100" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-xl-7">
+                        <h5 class="text-uppercase text-primary">Sobre nosotros</h5>
+                        <h1 class="mb-4">¿Quienes somos?</h1>
+                        <p class="fs-5 mb-4">En Caritas Felices trabajamos con dedicación para brindar alimento y apoyo a niños y 
+                            familias en situación de vulnerabilidad en nuestra comunidad. Nuestro comedor es un espacio de encuentro, cariño y 
+                            esperanza, donde, con la colaboración de voluntarios y donantes, buscamos mejorar la calidad de vida de quienes más 
+                            lo necesitan. ¡Juntos, podemos hacer la diferencia!
+                        </p>
+                        <div class="tab-class bg-secondary p-4">
+                            <ul class="nav d-flex mb-2">
+                                <li class="nav-item mb-3">
+                                    <a class="d-flex py-2 text-center bg-white active" data-bs-toggle="pill" href="#tab-1">
+                                        <span class="text-dark" style="width: 150px;">Nosotros</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-3">
+                                    <a class="d-flex py-2 mx-3 text-center bg-white" data-bs-toggle="pill" href="#tab-2">
+                                        <span class="text-dark" style="width: 150px;">Misión</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-3">
+                                    <a class="d-flex py-2 text-center bg-white" data-bs-toggle="pill" href="#tab-3">
+                                        <span class="text-dark" style="width: 150px;">Visión</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="tab-1" class="tab-pane fade show p-0 active">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="d-flex">
+                                                <div class="text-start my-auto">
+                                                    <h5 class="text-uppercase mb-3">Nuestro equipo</h5>
+                                                    <p class="mb-4">Caritas Felices es liderada por Marisa Sánchez, quien con dedicación y esfuerzo incansable coordina cada actividad y organiza las ayudas necesarias para que el comedor siga funcionando. Junto con un equipo de voluntarios comprometidos y una red de colaboradores, trabajamos día a día para marcar una diferencia.
+                                                    </p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab-2" class="tab-pane fade show p-0">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="d-flex">
+                                                <div class="text-start my-auto">
+                                                    <h5 class="text-uppercase mb-3">Misión</h5>
+                                                    <p class="mb-4">Nuestra misión es brindar alimentos, contención y apoyo a los niños y familias más vulnerables de nuestra comunidad. Trabajamos
+                                                         con un enfoque en la dignidad y la inclusión, promoviendo el bienestar a través de la colaboración solidaria y
+                                                          el compromiso social.
+                                                    </p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab-3" class="tab-pane fade show p-0">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="d-flex">
+                                                <div class="text-start my-auto">
+                                                    <h5 class="text-uppercase mb-3">Visión</h5>
+                                                    <p class="mb-4">Soñamos con una comunidad donde ningún niño pase hambre y cada familia tenga oportunidades para crecer y desarrollarse. 
+                                                        Aspiramos a ser un modelo de apoyo comunitario sostenible, donde la generosidad y la empatía impulsen el cambio.
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Volunteers Start -->
+        <div class="container-fluid volunteer py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-5">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="volunteer-img">
+                                    <img src=" {% static 'img/volunteers-1.jpeg' %}" class="img-fluid w-100" alt="Image">
+                                    <div class="volunteer-title">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="volunteer-img">
+                                    <img src=" {% static 'img/volunteers-3.jpg' %}" class="img-fluid w-100" alt="Image">
+                                    <div class="volunteer-title">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="volunteer-img">
+                                    <img src=" {% static 'img/volunteers-2.jpeg' %}" class="img-fluid w-100" alt="Image">
+                                    <div class="volunteer-title">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="volunteer-img">
+                                    <img src=" {% static 'img/volunteers-4.jpg' %}" class="img-fluid w-100" alt="Image">
+                                    <div class="volunteer-title">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <h5 class="text-uppercase text-primary">Valores</h5>
+                        <p class="mb-4">Compasión, solidaridad y compromiso son los pilares que guían nuestro trabajo en Caritas Felices. Creemos en el respeto y la dignidad de cada persona, y en el poder de la comunidad para transformar vidas.</p>
+                        <h5 class="text-uppercase text-primary">¿Cómo ayudar?</h5>
+                        <p class="mb-4">Tu colaboración es fundamental para que podamos continuar. Puedes ayudar donando alimentos, ropa, o brindando tu tiempo como voluntario. Caritas Felices es un esfuerzo conjunto, y cada contribución suma. Si deseas apoyarnos, visita la sección "Quiero Donar" para conocer todas las formas en que puedes hacer la diferencia.</p>
+                        <p class="text-dark"><i class=" fa fa-check text-primary me-2"></i> Solidaridad en acción: un plato de comida y una esperanza para cada niño.</p>
+                        <p class="text-dark"><i class=" fa fa-check text-primary me-2"></i> Construyendo juntos un futuro con más oportunidades para todos.</p>
+                        <p class="text-dark"><i class=" fa fa-check text-primary me-2"></i> Un espacio donde el amor y la solidaridad transforman vidas cada día.</p>
+                        <p class="text-dark"><i class=" fa fa-check text-primary me-2"></i> Un plato de comida puede saciar el hambre, pero un gesto de amor alimenta el alma.</p>
+                        <p class="text-dark mb-5"><i class=" fa fa-check text-primary me-2"></i> Cuando damos, sembramos esperanza en corazones que necesitan florecer.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Volunteers End -->
+
+        {% endblock %}

@@ -1,0 +1,110 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<!-- Header Start -->
+<div class="container-fluid bg-breadcrumb">
+  <div class="container text-center py-5" style="max-width: 900px">
+    <h1 class="text-white display-3 mb-4">Donaciones</h1>
+  </div>
+</div>
+<!-- Header End -->
+<div class="container-fluid causes py-5">
+  <div class="container py-5">
+    <div class="text-center mx-auto pb-5" style="max-width: 800px">
+      <h5 class="text-uppercase text-primary">DONACIONES</h5>
+      <h1 class="mb-4">¿Como podés ayudar?</h1>
+    </div>
+    <div
+      class="row g-4"
+      style="display: flex; justify-content: center; text-align: center"
+    >
+      <div class="col-lg-6 col-xl-3">
+        <div class="causes-item">
+          <div class="causes-img">
+            <img
+              src="{% static 'img/alimentos-no-perecederos.jpg' %}"
+              class="img-fluid w-100"
+              alt="Image"
+              style="height: 200px"
+            />
+          </div>
+          <div class="causes-content" style="height: 400px">
+            <h4>ALIMENTOS</h4>
+            <p class="fw-bold">
+              Cada donación de alimentos representa un apoyo directo para la
+              nutrición de nuestro niños.
+            </p>
+
+            <!-- Sección de información adicional -->
+            <div class="extra-info">
+              <p>
+                Principalmente alimentos no perecederos como arroz, fideos,
+                arvejas, azúcar, cacao, sal, mate cocido, té, puré de tomate,
+                harina, leche en polvo, aceite, galletas, etc. También alimentos
+                perecederos como cortes de carnes, frutas, verduras, huevos,
+                lácteos, pan, facturas, bizcochos, etc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-xl-3">
+        <div class="causes-item">
+          <div class="causes-img">
+            <img
+              src="{% static 'img/abrigo.jpg' %}"
+              class="img-fluid w-100"
+              alt="Image"
+              style="height: 200px"
+            />
+          </div>
+          <div class="causes-content" style="height: 400px">
+            <h4>ROPA Y ABRIGO</h4>
+            <p class="fw-bold">
+              Dona ropa usada en buen estado que pueda ser reutilizada por
+              aquellos que más los necesitan.
+            </p>
+            <!-- Sección de información adicional -->
+            <div class="extra-info">
+              <p>
+                Se acepta cualquier tipo de ropa principalmente para niños y
+                adolescentes. Se pide priorizar ropa abrigada para pasar el
+                invierno, aunque cualquier prenda acorde a la estación es
+                bienvenida.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-xl-3">
+        <div class="causes-item">
+          <div class="causes-img">
+            <img
+              src="{% static 'img/utiles.jpg' %}"
+              class="img-fluid w-100"
+              alt="Image"
+              style="height: 200px"
+            />
+          </div>
+          <div class="causes-content" style="height: 400px">
+            <h4>ÚTILES Y JUGUETES</h4>
+            <p class="fw-bold">
+              Ayúdanos a llenar de alegrías su infancia, donando juguetes y
+              útiles escolares.
+            </p>
+
+            <!-- Sección de información adicional -->
+            <div class="extra-info">
+              <p>
+                Agradecemos la donación de lapiceras, lápices, carpetas, hojas,
+                cuadernos, libros, mochilas y cualquier material básico para
+                apoyar el aprendizaje de los niños. También se reciben juguetes,
+                peluches, muñecas, autitos, rompecabezas, juegos de mesa y
+                juguetes educativos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

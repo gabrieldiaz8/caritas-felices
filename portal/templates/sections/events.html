@@ -1,0 +1,59 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<!-- Header Start -->
+<div class="container-fluid bg-breadcrumb">
+  <div class="container text-center py-5" style="max-width: 900px">
+    <h1 class="text-white display-3 mb-4">Campañas Activas</h1>
+  </div>
+</div>
+<!-- Header End -->
+
+<!-- Events Start -->
+<div class="container-fluid donation py-5">
+  <div class="container py-5">
+    <div class="text-center mx-auto mb-5" style="max-width: 800px">
+      <h1 class="">Campañas de Donacion Activas</h1>
+    </div>
+    <div class="row g-4">
+      {% for campaña in campañas_activas %}
+      <div class="col-lg-4">
+        <div class="donation-item">
+          <img
+            src="{% static 'img/volunteers-2.jpeg' %}"
+            class="img-fluid w-100"
+            alt="Image"
+          />
+          <div class="donation-content d-flex flex-column">
+            <h5 class="text-uppercase text-primary mb-4">CARITAS FELICES</h5>
+            <a class="btn-hover-color display-6 text-white"
+              >{{ campaña.nombre }}</a
+            >
+            <p class="text-white mb-4">{{ campaña.contenido }}</p>
+            <div
+              class="donation-btn d-flex align-items-center justify-content-start"
+            >
+              <a
+                class="btn-hover-bg btn btn-primary text-white py-2 px-4"
+                href="https://wa.me/5493534114971?text=Hola,%20entre%20a%20la%20pagina%20de%20Caritas%20Felices%20y%20quiero%20donar%20para%20la%20campaña%20de%20{{ campaña.nombre }}"
+                >Quiero Donar !</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% if not campañas_activas %}
+    <div class="d-flex flex-column text-center">
+      <h4 class="mb-4">No hay campañas activas en este momento</h4>
+      <img
+        class="img-fluid"
+        src="{% static 'img/volunteers-2.jpeg' %}"
+        alt="asd"
+      />
+    </div>
+
+    {% endif %}
+  </div>
+</div>
+<!-- Events End -->
+{% endblock %}
